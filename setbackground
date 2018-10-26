@@ -1,0 +1,15 @@
+#!/bin/sh
+for i in /home/ddark/Downloads/WallpapersGeneral/
+
+do 
+	echo $(grep  "jpg"  $i)
+	echo $i
+	#if [ `grep $i` = "" ]
+	#	then
+			feh --bg-fill $i
+			sleep 2
+	#	else
+	#		echo "not found"
+	#fi
+
+done
